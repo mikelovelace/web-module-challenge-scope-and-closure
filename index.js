@@ -62,10 +62,18 @@ Use the inning function below to do the following:
 NOTE: This will be a callback function for the tasks below
 */
 
-function inning(/*Code Here*/){
-    /*Code Here*/
-}
+//MY NOTES
+// use Math.random and multiply it by 3 to generate a number from 0 to 2 and Math.floor it to convert it to a whole number.
 
+function inning(num){
+  return Math.floor(Math.random(num) * 3)
+}
+console.log(inning())
+console.log(inning())
+console.log(inning())
+console.log(inning())
+console.log(inning())
+console.log(inning())
 
 /* ⚾️⚾️⚾️ Task 3: finalScore() ⚾️⚾️⚾️
 Use the finalScore function below to do the following:
