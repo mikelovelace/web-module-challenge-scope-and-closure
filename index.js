@@ -65,8 +65,9 @@ NOTE: This will be a callback function for the tasks below
 //MY NOTES
 // use Math.random and multiply it by 3 to generate a number from 0 to 2 and Math.floor it to convert it to a whole number.
 
-function inning(num){
-  return Math.floor(Math.random(num) * 3)
+function inning(){
+  const inningPoints =  Math.floor(Math.random() * 3)
+  return inningPoints
 }
 console.log(inning())
 console.log(inning())
@@ -89,9 +90,20 @@ Use the finalScore function below to do the following:
 }
 */ 
 
-function finalScore(/*code Here*/){
-  /*Code Here*/
+function finalScore(inning, inningsCount){
+  const inningScore = {
+    Home: 0,
+    Away: 0
+  }
+
+  for(let i = 0; i < inningsCount; i++) {
+    inningScore.Home = inningScore.Home + inning();
+    inningScore.Away = inningScore.Home + inning();
+  }
+  return inningScore
 }
+console.log(finalScore(inning, 9))
+
 
 /* ⚾️⚾️⚾️ Task 4: getInningScore() ⚾️⚾️⚾️
 Use the getInningScore() function below to do the following:
