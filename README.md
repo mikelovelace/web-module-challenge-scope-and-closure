@@ -64,8 +64,13 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+   The closure is `${name}`. The variable `${name}` refers to the parameter in the outer function which is being accessed from the inner function.
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+   `dansRoll` will always equate to `Dan` but the number will change.
+
 c. What is the lexical scope of `newRoll`? 
+   The lexical scope of `newRoll` is the scope of personalDice()
 
 
 ### Task 3 - Stretch Goals
