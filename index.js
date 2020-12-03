@@ -30,7 +30,7 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
   1. What is the difference between counter1 and counter2?
 
     Counter1: The function `counterMaker()` is assigned to a variable.
-              The count variable is declared in function scope
+              The count variable is declared in block scope
               The count variable is incremented and returned inside of a nested function
 
               Counter2: The counter is declared in the global scope and is incremented and returned inside of a function declaration.
